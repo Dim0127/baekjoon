@@ -1,5 +1,4 @@
 #9663 N-Queen
-
 def backtracking(count, n, where, chess):
     possible=0
 
@@ -15,7 +14,7 @@ def backtracking(count, n, where, chess):
     elif count<=n-1:
         for i in range(n):
             if chess[i]==False:
-                k=1;
+                k=1
                 while count-k>=0:
                     if abs(where[count-k]-i)/k==1:
                         break
